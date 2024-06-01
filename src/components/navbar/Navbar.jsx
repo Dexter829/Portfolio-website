@@ -13,20 +13,20 @@ const Navbar = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          Lama Dev
+          Deepak Dev
         </motion.span>
         <div className="social">
-          <a href="#">
-            <img src="/facebook.png" alt="" />
+          <a href="https://www.linkedin.com/in/deepak-yadav-32614627a/">
+            <img src="/linkdin.png" alt="" />
           </a>
-          <a href="#">
-            <img src="/instagram.png" alt="" />
+          <a href="https://github.com/Dexter829/">
+            <img src="/github.png" alt="" />
           </a>
-          <a href="#">
-            <img src="/youtube.png" alt="" />
+          <a href="https://x.com/journeytosky1">
+            <img src="/x.png" alt="" />
           </a>
-          <a href="#">
-            <img src="/dribbble.png" alt="" />
+          <a href="https://deepaks-organization-6.gitbook.io/dex-verse">
+            <img src="/gitbooks.png" alt="" />
           </a>
         </div>
       </div>

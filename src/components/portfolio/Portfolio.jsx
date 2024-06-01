@@ -5,27 +5,29 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 const items = [
   {
     id: 1,
-    title: "React Commerce",
-    img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "ResumeRevamp",
+    img: "https://images.pexels.com/photos/5598289/pexels-photo-5598289.jpeg?auto=compress&cs=tinysrgb&w=600",
+    desc: "Automated Resume Screener: This online application uses Python modules such as NLTK and Scikit-learn to evaluate resumes. It helps to automate the first screening process by categorizing resumes based on relevant abilities and expertise for specific employment positions.",
+    link: "https://github.com/Dexter829/Resume-Predictor"
   },
   {
     id: 2,
-    title: "Next.js Blog",
-    img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "Image Caption Generator",
+    img: "https://imagecaptiongenerator.com/social-share.png",
+    desc: "The Image Caption Generator is a robust deep learning model built with PyTorch, a famous open-source machine learning framework. This approach is intended to create relevant and accurate captions for a diverse range of pictures.",
   },
   {
     id: 3,
-    title: "Vanilla JS App",
-    img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "Notiefy",
+    img: "https://i.pinimg.com/originals/33/cb/5c/33cb5cfb09577bb78bfa6e75311f04b8.jpg",
+    desc: "This Node.js application provides a comprehensive solution for managing records with full CRUD (Create, Read, Update, Delete) functionality. Built using Express.js as the web framework and MongoDB as the database, it offers a robust and scalable backend for managing data.",
   },
   {
     id: 4,
-    title: "Music App",
-    img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "Stock Price Prediction",
+    img: "https://analyticsindiamag.com/wp-content/uploads/2020/03/SBI-Stock-Prediction.png",
+    desc: "The LSTM-based RNN model is a powerful deep learning model that processes sequential input by efficiently memorizing patterns over time. This model was created using PyTorch, a famous open-source machine learning framework",
+    link: "https://github.com/Dexter829/Price-Prediction-using-RNN-LSTM"
   },
 ];
 
@@ -39,16 +41,20 @@ const Single = ({ item }) => {
   const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
 
   return (
-    <section >
+    <section>
       <div className="container">
         <div className="wrapper">
           <div className="imageContainer" ref={ref}>
             <img src={item.img} alt="" />
           </div>
-          <motion.div className="textContainer" style={{y}}>
+          <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button>See Demo</button>
+            {item.link && (
+              <a href={item.link} target="_blank" rel="noopener noreferrer">
+                <button>See Demo</button>
+              </a>
+            )}
           </motion.div>
         </div>
       </div>
@@ -72,7 +78,7 @@ const Portfolio = () => {
   return (
     <div className="portfolio" ref={ref}>
       <div className="progress">
-        <h1>Featured Works</h1>
+        <h1>Featured Project Works</h1>
         <motion.div style={{ scaleX }} className="progressBar"></motion.div>
       </div>
       {items.map((item) => (
