@@ -23,15 +23,13 @@
 ## Clone the repository:
 ### git clone https://github.com/Dexter829/Portfolio-website.git
 
-
-Technologies Used
-React.js
-Framer Motion
-HTML/CSS
-License
+## Technologies Used
+- React.js
+- Framer Motion
+- HTML/CSS
+## License
 This project is licensed under the MIT License. See the LICENSE file for details.
-
-Author
+## Author
 Deepak Yadav
 GitHub: Dexter829
 LinkedIn: https://www.linkedin.com/in/deepak-yadav-32614627a/
