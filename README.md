@@ -32,6 +32,6 @@ License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 Author
-Your Name
-GitHub: @your-username
-LinkedIn: Your LinkedIn Profile
+Deepak Yadav
+GitHub: Dexter829
+LinkedIn: https://www.linkedin.com/in/deepak-yadav-32614627a/
