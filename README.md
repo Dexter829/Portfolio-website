@@ -29,7 +29,3 @@
 - HTML/CSS
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
-## Author
-Deepak Yadav
-GitHub: Dexter829
-LinkedIn: https://www.linkedin.com/in/deepak-yadav-32614627a/
