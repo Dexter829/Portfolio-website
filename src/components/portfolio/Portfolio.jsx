@@ -12,9 +12,10 @@ const items = [
   },
   {
     id: 2,
-    title: "Image Caption Generator",
-    img: "https://imagecaptiongenerator.com/social-share.png",
-    desc: "The Image Caption Generator is a robust deep learning model built with PyTorch, a famous open-source machine learning framework. This approach is intended to create relevant and accurate captions for a diverse range of pictures.",
+    title: "InterviewAce",
+    img: "https://www.ttnews.com/sites/default/files/styles/article_full_width_image/public/2023-09/iTECH-Dysart-1200.jpg",
+    desc: "Developed an innovative web application leveraging AI to generate realistic interview questions and answers; enhanced user preparation and increased interview success rates by 45% through personalized video recording capabilities.",
+    link:"https://ai-mock-interview-dex.vercel.app/sign-in?redirect_url=https%3A%2F%2Fai-mock-interview-dex.vercel.app%2Fdashboard"
   },
   {
     id: 3,
